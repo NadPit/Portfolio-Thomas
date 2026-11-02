@@ -4,8 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Thomas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Bienvenu sur mon site</h1>
+    <nav>
+        <img src="images/logo.png" alt="Logo de Thomas" class="logo">
+        
+        <div class="nav-toggle" id="nav-toggle">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#projets" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+    </nav>
+    <header>
+        <div id="header-content">
+            <h1>Hi, Je suis Thomas,<br />Graphiste</h1>
+            <p id="subtitle">Passionné par le code et le design, j’aide les entreprises et les créateurs à développer des sites modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques fluides et efficaces.</p>
+            <a href="cv.html" id="button-cv">Téléchager mon CV</a>
+        </div>
+        <div class="header-image">
+            <img src="images/photo.png" alt="Photo de Thomas">
+    </header>
+
+    <section id="blog">
+        <div id="blog-content">
+
+        <h2>Articles resents</h2>
+        <div id="articles">
+                <article class="article-blog">
+                    <h3 class="article-title">Créer un design system à partir de zéro</h3>
+                    <p class="date-categorie">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Design, Pattern</span>
+                    </p>
+                    <p class="article-description">Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d’un projet digital.</p>
+                </article>
+        
+                <article class="article-blog">
+                    <h3 class="article-title">Créer des icônes pixel perfect dans Figma</h3>
+                    <p class="date-categorie">
+                        <span>12 Feb 2020</span>
+                        <span>|</span>
+                        <span>Figma, Icon Design</span>
+                    </p>
+                    <p class="article-description">Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien au web qu’aux applications mobiles.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Travaux en vedette</h2>
+            <article class="projet">
+                <div>
+                    <img src="images/projet1.png" alt="Design de tableaux de bord">
+                </div>
+                <div>
+                    <h3 class="projet-title">Design de tableaux de bord</h3>
+                </div>
+                <div class="date-type">
+                    <span class="projet-date">2020</span>
+                    <span class="projet-type">Dashboard</span>
+                </div>               
+                <p class="projet-description">Un projet de conception d’interface utilisateur pour une plateforme de gestion. L’objectif était de proposer un tableau de bord intuitif et esthétique.</p>
+            </article>
+
+            <article class="projet">
+                <div>
+                    <img src="images/projet2.png" alt="Portraits vibrants de 2020">
+                </div>
+                <div>
+                    <h3 class="projet-title">Portraits vibrants de 2020</h3>
+                </div>
+                <div class="date-type">
+                    <span class="projet-date">2018</span>
+                    <span class="projet-type">Illustration</span>
+                </div>               
+                <p class="projet-description">Série d’illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant l’identité et l’émotion à travers le portrait.</p>
+            </article>
+
+            <article class="projet">
+                <div>
+                    <img src="images/projet3.png" alt="36 jours de typographie">
+                </div>
+                <div>
+                    <h3 class="projet-title">36 jours de typographie</h3>
+                </div>
+                <div class="date-type">
+                    <span class="projet-date">2018</span>
+                    <span class="projet-type">Typographie</span>
+                </div>
+                <p class="projet-description">Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
+            </article>
+    </section>
+
+    <section id="contact">
+        <h2>Me contacter</h2>
+
+        <div id="contact-content">
+            <div id="coordonnees">
+                <h3 class="contact-title">Parlons-en</h3>
+                <p id="contact-intro">Vous avez une grande idée ou un projet à développer et besoin d’aide ? Contactez-moi, je serai ravi d’échanger avec vous et de vous accompagner.</p>
+            
+                <h3 class="contact-title">Email</h3>
+                <p id="email">E-mail: <a id="email-link" href="mailto:mon.email@exemple.com">mon.email@exemple.com</a></p>
+            
+                <h3 class="contact-title">Socials</h3>
+                <p><a class="socials-link" href="https://www.linkedin.com/in/thomas" target="_blank">X</a></p>
+                <p><a class="socials-link" href="https://www.instagram.com/thomas" target="_blank">Instagram</a></p>
+                <p><a class="socials-link" href="https://www.twitter.com/thomas" target="_blank">Facebook</a></p>
+            </div>
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="service">Quel service vous intéresse ?</label>
+                <select id="service" name="service">
+                    <option value="">Sélectionnez un service</option>
+                    <option value="design">Design</option>
+                    <option value="developpement">Développement</option>
+                    <option value="strategie">Stratégie</option>
+                </select>
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget">
+                    <option value="">Sélectionnez un budget</option>
+                    <option value="design">0 - 500</option>
+                    <option value="developpement">500 - 2000</option>
+                    <option value="strategie">2000 et plus</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Envoyer</button> 
+            </form>
+       
+    </div>
+    </section>
+
+    <footer>
+        <div id="icons-socials">
+            <a href="https://www.facebook.com/in/thomas" target="_blank"><img src="images/fb.png" alt="Logo Facebook"></a>
+            <a href="https://www.linkedin.com/in/thomas" target="_blank"><img src="images/linkedin.png" alt="Logo LinkedIn"></a>
+            <a href="https://www.instagram.com/thomas" target="_blank"><img src="images/instagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.twitter.com/thomas" target="_blank"><img src="images/twitter.png" alt="Logo Twitter"></a>
+         </div>
+            <p id="copyright">&copy; 2024 Thomas. Tous droits réservés.</p>
+
+</footer>
 </body>
 </html>
