@@ -11,6 +11,7 @@ nav {
     max-width: 1200px;
     margin: 15px auto 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 #nav-toggle {
@@ -26,6 +27,10 @@ nav {
     font-size: 20px;
 }
 
+#menu-button {
+    display: none;
+}
+
 header {
     display: flex;
     /* align-items: center; */
@@ -33,6 +38,7 @@ header {
     max-width: 1200px;
     margin: 100px auto 50px auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 #header-content {
@@ -77,6 +83,7 @@ h1 {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }   
 
 h2 {
@@ -95,6 +102,7 @@ h2 {
 
 .article-blog {
     width: 543px;
+    max-width: 48%;
     border-radius: 4px;
     /* height: 400px; */
     background-color: #fff;
@@ -121,6 +129,7 @@ h2 {
     width: 1200px;
     margin: auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .projet {
@@ -164,6 +173,7 @@ h2 {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 #contact-content {
     display: flex;
@@ -179,7 +189,7 @@ h2 {
     font-size: 20px;
 }
 
-#email {
+#contact-email {
     font-size: 16px;
 }
 
@@ -241,4 +251,73 @@ footer {
 #copyright {
     font-size: 14px;
     color: #21243D;
+}
+
+
+@media (max-width: 700px) {
+    .nav-link {
+        display: none;
+    }
+
+    #menu-button {
+        display: block;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        /*align-items: center;*/
+        text-align: center;
+    }
+
+    #header-content {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    #articles {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-blog {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .date-categorie {
+        flex-direction: column;
+        gap: 5px;
+    }
+   
+    .projet {
+        flex-direction: column;
+    }
+
+    .projet-image {
+        max-width: 100%;
+    }
+
+     #coordonnees {
+        display: none;
+    }
+
+    
+   /* nav {
+        padding: 0 20px;
+    }
+    header {
+        padding: 0 20px;
+    }
+    #blog-content {
+        padding: 0 20px;
+    }
+    #projets {
+        padding: 0 20px;
+    }
+    #contact {
+        padding: 0 20px;
+    }*/
 }
